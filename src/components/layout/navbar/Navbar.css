@@ -16,7 +16,6 @@
     z-index: 1;
     width: 100%;
     position: fixed;
-    top: 0;
     opacity: 0.9;
     background-color: #333333;
     margin-bottom: 1rem;
@@ -26,6 +25,7 @@
   } 
 .navbar li {
     display: inline-block;
+    align-items: inherit;
 }
 .navbar li a {
     color: #f4f4f4;
@@ -39,4 +39,8 @@
 }
 .navbar li a:hover {
     color: #90a4ae;
+}
+.navbar-header {
+  color: #f4f4f4;
+  padding: 0.45rem;
 }
