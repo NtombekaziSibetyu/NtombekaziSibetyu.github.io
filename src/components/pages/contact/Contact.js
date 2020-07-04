@@ -1,30 +1,35 @@
 import React from 'react';
 import axios from 'axios';
+import PropTypes from 'prop-types'
 
-const Contact = () => {
+
+const Contact = (props) => {
+  
     return (
         <div className='contact-body'>
             <h2>Contact Me</h2>
+          <div className='container'>
             <div className='row'>
-                <div className='col'>
-                <i class="fas fa-phone-square-alt">0630447645</i>
+                <div className='card-3m'>
+                <i class="fas fa-phone-square-alt">Call me on:{props.cellNo}</i>
                 </div>
-                <div className='col'>
-                <i class=""></i>
-                </div>
-                <div className='col'>
+              
+                <div className='card-3m'>
                 <i class="fab fa-github"></i>
+                <a href={props.github} className="">Github Link</a>
                 </div>
-                <div className='col'>
-                <i class="fab fa-linkedin-in"></i>
+                <div className='card-3m'>
+                <i class="fab fa-linkedin-in "></i>
+                <a href={props.linkedin} className="">LinkedIn</a>
                 </div>
             </div> 
+          </div>
             <form
-            action="Put email reference here"
+            action="https://www.googleapis.com/gmail/v1/users/userId/messages/send"
             method="POST">
             <div className="form-group">
             <div className="row">
-              <div className="col-12 col-sm-12 col-md-6 mx-auto">
+              <div className="col-4 col-md-6 mx-auto">
                 <input
                   type="text"
                   name="name"
@@ -37,7 +42,7 @@ const Contact = () => {
           </div>
           <div className="form-group hidden">
             <div className="row">
-              <div className="col-12 col-sm-12 col-md-6 mx-auto">
+              <div className="col-4 col-sm-4 col-md-6 mx-auto">
                 <input
                   type="email"
                   name="_replyto"
@@ -50,7 +55,7 @@ const Contact = () => {
           </div>
           <div className="form-group hiddenRight">
             <div className="row">
-              <div className="col-12 col-sm-12 col-md-6 mx-auto">
+              <div className="col-4 col-sm-4 col-md-6 mx-auto">
                 <textarea
                   name="message"
                   className="form-control form-control-lg"
@@ -62,15 +67,26 @@ const Contact = () => {
             </div>
           </div>
           <div className="row text-md-right text-sm-center">
-            <div className="col-12 col-sm-12 col-md-6 mx-auto">
-              <button type="submit" className="btn btn-primary mb-2 hidden">
-                Submit
+            <div className="col-4 col-sm-4 col-md-6 mx-auto">
+              <button type="submit" className="btn btn-primary mb-2 hidden" >
+                Send
               </button>
             </div>
           </div>
         </form> 
-        </div>
+      </div>
     )
+}
+Contact.defaultProps = {
+  cellNo: '063 044 7645 / 081 348 6222',
+  github: 'https://github.com/NtombekaziSibetyu ',
+  linkedin: 'https://www.linkedin.com/in/ntombekazi-sibetyu-21a353164 '
+}
+
+Contact.propTypes = {
+  cellNo: PropTypes.string.isRequired,
+  github: PropTypes.string.isRequired,
+  linkedin: PropTypes.string.isRequired
 }
 
 export default Contact;

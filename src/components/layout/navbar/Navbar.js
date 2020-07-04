@@ -4,29 +4,32 @@ import './Navbar.css';
 import {Link} from 'react-router-dom';
 
 
-const Navbar = ({title, icon, homeIcon, homeTitle, aboutIcon, aboutTitle,contactIcon, contactTitle}) => {
+const Navbar = (props) => {
     return (
-        <div className="navbar">
-            <h3 className='navbar-header'>
-                <i className={icon}></i>{title}
-            </h3>
+        <div className="navbar"> 
             <ul>
                 <li>
                     <Link to={'/'}>
-                        <i className={homeIcon}/>
-                            {homeTitle}
+                        <i className={props.homeIcon}/>
+                            {props.homeTitle}
                         </Link>
                 </li>
                 <li>
                     <Link to={'/about'}>
-                        <i className={aboutIcon}/>
-                            {aboutTitle}
+                        <i className={props.aboutIcon}/>
+                            {props.aboutTitle}
                         </Link>
                 </li>
                 <li>
                     <Link to={'/contact'}>
-                        <i className={contactIcon}/>
-                            {contactTitle}
+                        <i className={props.contactIcon}/>
+                            {props.contactTitle}
+                    </Link>
+                </li>
+                <li>
+                    <Link to={'/skills'}>
+                        <i className={props.skillsIcon}/>
+                            {props.skillsTitle}
                     </Link>
                 </li>
             </ul>
@@ -34,18 +37,18 @@ const Navbar = ({title, icon, homeIcon, homeTitle, aboutIcon, aboutTitle,contact
     )
 }
 Navbar.defaultProps = {
-    title:'My Profile',
-    icon:'fas fa-id-badge',
+   
     homeTitle: 'Home',
     homeIcon: 'fas fa-home',
     aboutTitle: 'About Me',
     aboutIcon: 'fas fa-info',
     contactTitle: 'Contact Me',
-    contactIcon: 'fas fa-phone-square'
+    contactIcon: 'fas fa-phone',
+    skillsTitle: 'My projects',
+    skillsIcon: 'fas fa-file-code'
  };
  Navbar.propTypes = {
-    title: PropTypes.string.isRequired,
-    icon: PropTypes.string.isRequired,
+    
     homeTitle: PropTypes.string.isRequired,
     homeIcon: PropTypes.string.isRequired,
     aboutTitle: PropTypes.string.isRequired,

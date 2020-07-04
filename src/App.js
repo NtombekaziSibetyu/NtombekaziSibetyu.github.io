@@ -1,25 +1,29 @@
 import React, { Fragment } from 'react';
-import { Route } from 'react-router-dom';
+import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 import Navbar from './components/layout/navbar/Navbar';
-import Main from './components/Main' ;
+import Home from './components/layout/landingPage/Home';
+import About from './components/pages/about/About';
+import Contact from './components/pages/contact/Contact';
+import Portfolio from './components/pages/portfolio/Portfolio';
+
 
 const App = () => {
 
-  
-  
   return (
-    
-      <Fragment>
-        <Navbar/>
-        <div className='container'>
-        <Main/>
-        </div>
-        
-      </Fragment>
-        
-  
-
-    
+      <Router>
+        <Fragment>
+          <Navbar/>
+          <div className='container'>
+            <Switch>
+              <Route exact path='/' component={Home}/>
+              <Route path='/about' component={About}/>
+              <Route exact path='/contact' component={Contact}/>
+              <Route exact path='/skills' component={Portfolio}/>
+            </Switch>
+          </div>
+        </Fragment>
+      </Router>
+      
   );
 }
 
