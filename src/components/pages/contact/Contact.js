@@ -1,32 +1,32 @@
 import React from 'react';
 import axios from 'axios';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
+import './Contact.css'
 
 
 const Contact = (props) => {
   
     return (
         <div className='contact-body'>
-            <h2>Contact Me</h2>
+            <h2>Get in touch</h2>
           <div className='container'>
             <div className='row'>
                 <div className='col-3'>
-                <i class="fas fa-phone-square"></i>
+                <i class="fas fa-phone-square fa-2x"></i>
                 <p>Call:{props.cellNo}</p>
                 </div>
-              
                 <div className='col-3'>
-                <i class="fab fa-github"></i>
+                <i class="fab fa-github fa-2x"></i>
                 <p><a href={props.github} className="">Github Link</a></p>
                 </div>
                 <div className='col-3'>
-                <i class="fab fa-linkedin-in "></i>
+                <i class="fab fa-linkedin-in fa-2x" ></i>
                 <p><a href={props.linkedin} className="">LinkedIn</a></p>
                 </div>
             </div> 
           </div>
             <form
-            action="https://www.googleapis.com/gmail/v1/users/userId/messages/send"
+            action="https://formspree.io/xleppnqw"
             method="POST">
               <h3>Send an email</h3>
             <div className="form-group">
@@ -70,7 +70,7 @@ const Contact = (props) => {
           </div>
           <div className="row text-md-right text-sm-center">
             <div className="col-4 col-sm-4 col-md-6 mx-auto">
-              <button type="submit" className="btn btn-primary mb-2 hidden" >
+              <button type="submit" className="form-button" >
                 Send
               </button>
             </div>

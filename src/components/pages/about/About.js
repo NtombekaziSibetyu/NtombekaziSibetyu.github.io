@@ -55,7 +55,7 @@ import Navbar from '../../layout/navbar/Navbar';
             <h3><strong>Testimonials</strong></h3> 
             <div className='row'>
                 <div className='col-6'>
-                    <img src="" alt="" className=""/>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRn82hMnPMYJSyaIm6If_PXM3lFL5dNABS-Cw&usqp=CAU" alt="" className=""/>
                     <p>Ntombekazi Sibetyu is a wise and committed individual. 
                         I have had the pleasure of working with her and found her
                          to be a really hard working individual. We were put under 
@@ -65,7 +65,7 @@ import Navbar from '../../layout/navbar/Navbar';
                         Viata(Collegeue)</p>
                 </div>
                 <div className='col-6'>
-                    <img src="" alt="" className=""/>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRsjTqwx9H3agzs8B_Dt1o1JrsIPxSQGQJ40w&usqp=CAU" alt="" className=""/>
                     <p>
                         Ntombekazi is what I believe to be a hard worker, 
                         she is great to work with and is very creative with 
@@ -73,7 +73,7 @@ import Navbar from '../../layout/navbar/Navbar';
                         Anam Majikijela(collegue)</p>
                 </div>
                 <div className='col-6'>
-                    <img src="" alt="" className=""/>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT4T_UNSTP5J6pz6SWwEHbTfIstHko4SMJTfg&usqp=CAU" alt="" className=""/>
                     <p>Ntombekazi is humble, charismatic and confident.
                         Her passion and dedication for her work is truly 
                         remarkable and encouraging. It would be a great honor

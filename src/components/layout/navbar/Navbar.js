@@ -21,15 +21,15 @@ const Navbar = (props) => {
                         </Link>
                 </li>
                 <li>
-                    <Link to={'/contact'}>
-                        <i className={props.contactIcon}/>
-                            {props.contactTitle}
-                    </Link>
-                </li>
-                <li>
                     <Link to={'/skills'}>
                         <i className={props.skillsIcon}/>
                             {props.skillsTitle}
+                    </Link>
+                </li>
+                <li>
+                    <Link to={'/contact'}>
+                        <i className={props.contactIcon}/>
+                            {props.contactTitle}
                     </Link>
                 </li>
             </ul>
