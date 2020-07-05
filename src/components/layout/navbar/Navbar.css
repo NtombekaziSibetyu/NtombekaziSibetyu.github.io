@@ -1,28 +1,21 @@
-:root {
-    --primary-color: #003699;
-    --dark-color: #333333;
-    --light-color: #f4f4f4;
-    --danger-color: #dc3545;
-    --success-color: #28a745;
-  }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style-type: none;
-    flex-direction: row;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    position: fixed;
-    opacity: 0.9;
-    background-color: #333333;
+  margin: 0;
+  padding: 0.5px;
+  list-style-type: none;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  opacity: 0.9;
+  background-color: #333333;
     
   }
 .navbar ul {
-    display: inline-block;
-
+    display: block;
+    top: 0;
+    width: 100%;
   } 
 .navbar li {
     display: inline-block;

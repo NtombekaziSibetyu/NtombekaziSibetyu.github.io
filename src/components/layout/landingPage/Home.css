@@ -1,10 +1,16 @@
-
+.container{
+  margin:0px auto;
+  width: 960px; 
+  padding-left: 30px;
+  padding-right: 30px;
+}
 
 .typewriter h1 {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; 
+    overflow: hidden; 
+    border-right: .15em ; 
+    padding-right: 10px;
     white-space: nowrap; 
-    margin: 0 auto; 
+    margin-top: 100px;
     letter-spacing: .15em; 
     animation: 
       typing 3.5s steps(40, end),
@@ -22,3 +28,13 @@
     from, to { border-color: transparent }
     50% { border-color: orange; }
   }
+
+.block {
+  background-color:black;
+  opacity: 0.9;
+  padding: 7px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3%;
+}

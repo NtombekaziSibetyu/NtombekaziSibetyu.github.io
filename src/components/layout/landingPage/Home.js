@@ -6,9 +6,11 @@ const Home = ({text}) => {
     return (
     <div className='container ' style={{width: '100%', margin: 'auto'}}>
       <ReactTypingEffect
-         className='typewriter' speed='500' eraseDelay='500' typingDelay='250' cursor='|'
+         className='typewriter h1-center' speed='500' eraseDelay='500' typingDelay='250' cursor='|'
          text={text} />
-     <p> HTML\ CSS | Bootstrap | JavaScript | React | Python | MySQL | MongoDB</p>
+        <div className='block text-center'>
+          <p className='card-text'>HTML\ CSS | Bootstrap | JavaScript | React | Python | MySQL | MongoDB</p>
+        </div>
     </div>
     );
     
@@ -16,7 +18,7 @@ const Home = ({text}) => {
 
 
 Home.defaultProps = {
-    text: ['Hello', 'I', 'Am', 'Ntombekazi', 'Sibetyu', 'I','am','a','developer']
+    text: ['Hello', 'I','am','a','developer']
 }
 Home.propTypes = {
     text: PropTypes.array.isRequired

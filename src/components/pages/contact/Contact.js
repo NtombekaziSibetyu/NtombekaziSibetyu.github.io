@@ -10,23 +10,25 @@ const Contact = (props) => {
             <h2>Contact Me</h2>
           <div className='container'>
             <div className='row'>
-                <div className='card-3m'>
-                <i class="fas fa-phone-square-alt">Call me on:{props.cellNo}</i>
+                <div className='col-3'>
+                <i class="fas fa-phone-square"></i>
+                <p>Call:{props.cellNo}</p>
                 </div>
               
-                <div className='card-3m'>
+                <div className='col-3'>
                 <i class="fab fa-github"></i>
-                <a href={props.github} className="">Github Link</a>
+                <p><a href={props.github} className="">Github Link</a></p>
                 </div>
-                <div className='card-3m'>
+                <div className='col-3'>
                 <i class="fab fa-linkedin-in "></i>
-                <a href={props.linkedin} className="">LinkedIn</a>
+                <p><a href={props.linkedin} className="">LinkedIn</a></p>
                 </div>
             </div> 
           </div>
             <form
             action="https://www.googleapis.com/gmail/v1/users/userId/messages/send"
             method="POST">
+              <h3>Send an email</h3>
             <div className="form-group">
             <div className="row">
               <div className="col-4 col-md-6 mx-auto">

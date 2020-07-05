@@ -8,17 +8,22 @@ import Navbar from '../../layout/navbar/Navbar';
 
     return (
         <div className='container'>
-             <div className='card grid-2'>
-                <img src='' className='round-img' alt="image" 
-                style={{width:'150px'}}/>
-                <h1>About Me</h1>
-             <p> Full Name: {props.fullname}</p>
-            <p> Date of birth: {props.dob}</p>
-            <p> Gender: {props.gender}</p>
-            <p> Location suburb: {props.suburb}</p>
-            <p> Nationality: {props.nationality}</p>
-            <p> {props.criminalRec}</p>
-            </div> 
+            <h1>About Me</h1>
+            <div className='row'>
+                <div className='col-6'>
+                    <img src='' className='round-img' alt="profile" 
+                    style={{width:'150px'}}/>  
+                </div>
+                <div className='col-6'>
+                    <p> Full Name: {props.fullname}</p>
+                    <p> Date of birth: {props.dob}</p>
+                    <p> Gender: {props.gender}</p>
+                    <p> Location suburb: {props.suburb}</p>
+                    <p> Nationality: {props.nationality}</p>
+                    <p> {props.criminalRec}</p>
+                </div> 
+            </div>
+             
             <h3><strong>Bio</strong></h3>
             <p>
             I am an innovative person who is always willing to learn and expand my skills and 
@@ -44,10 +49,43 @@ import Navbar from '../../layout/navbar/Navbar';
             <Fragment>
             <h3><strong>Education</strong></h3>
             <p><strong>MATRIC:</strong>{props.school}</p>
-            <p><strong>OTHER:</strong>{props.tertiary}</p>
+            <p><strong>TERTIARY:</strong>{props.tertiary}</p>
             </Fragment>
             <Fragment>
-            <h3><strong>Testimonials</strong></h3>  
+            <h3><strong>Testimonials</strong></h3> 
+            <div className='row'>
+                <div className='col-6'>
+                    <img src="" alt="" className=""/>
+                    <p>Ntombekazi Sibetyu is a wise and committed individual. 
+                        I have had the pleasure of working with her and found her
+                         to be a really hard working individual. We were put under 
+                         a lot of pressure and stress and yet she has kept on going,
+                         not given up and tried her best. I believe that Ntombekazi has
+                         great potential and will be an asset in the workplace.
+                        Viata(Collegeue)</p>
+                </div>
+                <div className='col-6'>
+                    <img src="" alt="" className=""/>
+                    <p>
+                        Ntombekazi is what I believe to be a hard worker, 
+                        she is great to work with and is very creative with 
+                        every project she comes up with. 
+                        Anam Majikijela(collegue)</p>
+                </div>
+                <div className='col-6'>
+                    <img src="" alt="" className=""/>
+                    <p>Ntombekazi is humble, charismatic and confident.
+                        Her passion and dedication for her work is truly 
+                        remarkable and encouraging. It would be a great honor
+                        to have her on board.
+                        Yonela Ntsangani -collegue
+                    </p>
+                </div>
+                <div className='col-6'>
+                    <img src="" alt="" className=""/>
+                    <p></p>
+                </div>
+            </div>
             </Fragment>
         </div>
             
