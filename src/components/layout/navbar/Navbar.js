@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 
 const Navbar = (props) => {
     return (
-        <div className="navbar"> 
+        <div className="navbar fixed-to-top"> 
             <ul>
                 <li>
                     <Link to={'/'}>

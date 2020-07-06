@@ -3,15 +3,25 @@
   width: 960px; 
   padding-left: 30px;
   padding-right: 30px;
+  display: table-cell;
+	vertical-align: middle;
 }
 
 .typewriter h1 {
     overflow: hidden; 
     border-right: .15em ; 
     padding-right: 10px;
+    display: table-cell;
+	  vertical-align: middle;
     white-space: nowrap; 
     margin-top: 100px;
     letter-spacing: .15em; 
+    left: 50%;
+    top: 50%;
+    font-size: 30px;
+    font-weight: 900;
+    position: absolute;
+    transform: translate(-50%, -50%);
     animation: 
       typing 3.5s steps(40, end),
       blink-caret .75s step-end infinite;
@@ -30,9 +40,10 @@
   }
 
 .block {
-  background-color:black;
+  
   opacity: 0.9;
   padding: 7px;
+  padding-top: 500px;
   width: 50%;
   margin-left: auto;
   margin-right: auto;

@@ -12,7 +12,6 @@ const App = () => {
   return (
       <Router>
         <Fragment>
-          <div className='container'>
           <Navbar/>
             <Switch>
               <Route exact path='/' component={Home}/>
@@ -20,7 +19,6 @@ const App = () => {
               <Route exact path='/contact' component={Contact}/>
               <Route exact path='/skills' component={Portfolio}/>
             </Switch>
-          </div>
         </Fragment>
       </Router>
       
