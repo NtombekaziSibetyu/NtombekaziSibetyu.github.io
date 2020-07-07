@@ -1,5 +1,5 @@
-.container{
-  margin:0px auto;
+.land-page {
+  margin: 500px;
   width: 960px; 
   padding-left: 30px;
   padding-right: 30px;
@@ -11,8 +11,7 @@
     overflow: hidden; 
     border-right: .15em ; 
     padding-right: 10px;
-    display: table-cell;
-	  vertical-align: middle;
+    
     white-space: nowrap; 
     margin-top: 100px;
     letter-spacing: .15em; 
@@ -20,6 +19,7 @@
     top: 50%;
     font-size: 30px;
     font-weight: 900;
+    color:#FFFFFF;
     position: absolute;
     transform: translate(-50%, -50%);
     animation: 
@@ -40,7 +40,7 @@
   }
 
 .block {
-  
+  color: #000;
   opacity: 0.9;
   padding: 7px;
   padding-top: 500px;
@@ -48,4 +48,7 @@
   margin-left: auto;
   margin-right: auto;
   border-radius: 3%;
+}
+.card-text {
+  color: #FFFFFF;
 }

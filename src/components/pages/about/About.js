@@ -8,12 +8,12 @@ import PropTypes from 'prop-types';
         <div className='about-content'>
             <h1>About Me</h1>
             <div className='row'>
-                <div className='col-6'>
+                <div className='col-6 about'>
                     <img src='data:image/png;base64,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' 
                     className='round-img' alt="profile" 
                     style={{width:'150px'}}/>  
                 </div>
-                <div className='col-6'>
+                <div className='col-6 about'>
                     <p> Full Name: {props.fullname}</p>
                     <p> Date of birth: {props.dob}</p>
                     <p> Gender: {props.gender}</p>
@@ -53,8 +53,9 @@ import PropTypes from 'prop-types';
             <Fragment>
             <h3><strong>Testimonials</strong></h3> 
             <div className='row'>
-                <div className='col-6'>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRn82hMnPMYJSyaIm6If_PXM3lFL5dNABS-Cw&usqp=CAU" alt="" className=""/>
+                <div className='col-6 about'>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS0sCAvrW1yFi0UYMgTZb113I0SwtW0dpby8Q&usqp=CAU" 
+                    alt="profile" className=""/>
                     <p>Ntombekazi Sibetyu is a wise and committed individual. 
                         I have had the pleasure of working with her and found her
                          to be a really hard working individual. We were put under 
@@ -63,16 +64,18 @@ import PropTypes from 'prop-types';
                          great potential and will be an asset in the workplace.
                         Viata(Collegeue)</p>
                 </div>
-                <div className='col-6'>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRsjTqwx9H3agzs8B_Dt1o1JrsIPxSQGQJ40w&usqp=CAU" alt="" className=""/>
+                <div className='col-6 about'>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSoWLykLuq09-gzjxeyGGKMzP04Z6gSN085OA&usqp=CAU" 
+                    alt="" />
                     <p>
                         Ntombekazi is what I believe to be a hard worker, 
                         she is great to work with and is very creative with 
                         every project she comes up with. 
                         Anam Majikijela(collegue)</p>
                 </div>
-                <div className='col-6'>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT4T_UNSTP5J6pz6SWwEHbTfIstHko4SMJTfg&usqp=CAU" alt="" className=""/>
+                <div className='col-6 about'>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTdwc59rVEsuR61UFzzhjA4WWDcCQWER7Uahw&usqp=CAU" 
+                    alt="profile"/>
                     <p>Ntombekazi is humble, charismatic and confident.
                         Her passion and dedication for her work is truly 
                         remarkable and encouraging. It would be a great honor
@@ -80,7 +83,7 @@ import PropTypes from 'prop-types';
                         Yonela Ntsangani -collegue
                     </p>
                 </div>
-                <div className='col-6'>
+                <div className='col-6 about'>
                     <img src="" alt="" className=""/>
                     <p></p>
                 </div>
