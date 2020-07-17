@@ -7,12 +7,12 @@ class ProgressBar extends React.Component {
       this.state = {
         progress:{
             html: '90',
-            css: '80',
-            bootstrap: '70',
+            css: '70',
+            bootstrap: '60',
             python:'80',
             mysql:'90',
-            js:'70',
-            react:'60'
+            js:'60',
+            react:'50'
         }
       };
     }
